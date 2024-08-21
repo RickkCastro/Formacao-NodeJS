@@ -1,6 +1,5 @@
 import fs from "node:fs";
 import { parse } from "csv-parse";
-import path from "node:path";
 
 async function processCSV(filepath) {
     const parser = fs.createReadStream(filepath).pipe(parse({ columns: true }));
