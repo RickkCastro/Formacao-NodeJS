@@ -1,0 +1,27 @@
+{
+	"name": "03-api-solid",
+	"version": "1.0.0",
+	"description": "GymPass style app.",
+	"main": "index.js",
+	"scripts": {
+		"dev": "tsx watch src/server.js",
+		"build": "tsup src --out-dir build",
+		"start": "node build/server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "22.10.7",
+		"prisma": "6.2.1",
+		"tsup": "8.3.5",
+		"tsx": "4.19.2",
+		"typescript": "5.7.3"
+	},
+	"dependencies": {
+		"@prisma/client": "6.2.1",
+		"dotenv": "16.4.7",
+		"fastify": "5.2.1",
+		"zod": "3.24.1"
+	}
+}
